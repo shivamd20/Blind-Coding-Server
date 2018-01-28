@@ -2,7 +2,7 @@
 require('./env')();
 
 var express = require('express');
-//var HandleSocket=require('rt-hasura');
+var HandleSocket=require('rt-hasura');
 var app = express();
 
 
