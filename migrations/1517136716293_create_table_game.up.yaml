@@ -1,0 +1,8 @@
+- args:
+    sql: CREATE TABLE "game"("userId" integer NOT NULL, "problemid" integer NOT NULL,
+      "gameid" integer NOT NULL, "start_time" timestamptz NOT NULL DEFAULT now(),
+      "duration" integer NOT NULL, PRIMARY KEY ("userId") )
+  type: run_sql
+- args:
+    name: game
+  type: add_existing_table_or_view

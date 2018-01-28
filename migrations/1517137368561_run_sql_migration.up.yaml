@@ -1,0 +1,5 @@
+- args:
+    sql: |2-
+
+      ALTER TABLE game ADD CONSTRAINT pk_game PRIMARY KEY (gameid)
+  type: run_sql

@@ -1,0 +1,8 @@
+- args:
+    sql: CREATE TABLE "chats"("sender_id" integer NOT NULL, "receiver_id" integer
+      NOT NULL, "msg" text NOT NULL, "chat_id" serial NOT NULL, PRIMARY KEY ("chat_id")
+      )
+  type: run_sql
+- args:
+    name: chats
+  type: add_existing_table_or_view

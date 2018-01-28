@@ -1,0 +1,8 @@
+- args:
+    name: reciiver_user
+    table: user
+    using:
+      foreign_key_constraint_on:
+        column: receiver_id
+        table: chats
+  type: create_array_relationship

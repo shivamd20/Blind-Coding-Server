@@ -1,0 +1,16 @@
+- args:
+    permission:
+      columns:
+      - semester
+      - user_id
+      - email
+      - name
+      - College
+      - mobile
+      - branch
+      filter:
+        user_id:
+          $eq: X-HASURA-USER-ID
+    role: user
+    table: user
+  type: create_select_permission

@@ -1,0 +1,8 @@
+- args:
+    name: game_problem
+    table: problem
+    using:
+      foreign_key_constraint_on:
+        column: problemid
+        table: game
+  type: create_array_relationship

@@ -28,6 +28,7 @@ defaultProviders:
     defaultRoles: []
   google:
     enabled: "false"
+    clientIds: ["369512443285-csf2fs2i053aosgv3u4ppjlnbc414fc6.apps.googleusercontent.com"]
     defaultRoles: []
   facebook:
     enabled: "false"
