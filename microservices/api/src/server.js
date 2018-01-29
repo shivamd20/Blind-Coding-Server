@@ -28,8 +28,10 @@ app.get('/', function (req, res) {
 
 app.use(express.static('client'))
 
-var handleSocket=new HandleSocket(server);
 
+onConnection = (socket) => {};
+
+var handleSocket=new HandleSocket(server,undefined,onConnection);
 
 
 
