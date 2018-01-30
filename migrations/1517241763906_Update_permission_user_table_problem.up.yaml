@@ -1,0 +1,9 @@
+- args:
+    permission:
+      columns:
+      - problem_id
+      - description
+      filter: {}
+    role: user
+    table: problem
+  type: create_select_permission

@@ -1,0 +1,14 @@
+- args:
+    permission:
+      columns:
+      - start_time
+      - game_key
+      - result
+      - problemid
+      - duration
+      - gameid
+      - userId
+      filter: {}
+    role: user
+    table: game
+  type: create_select_permission

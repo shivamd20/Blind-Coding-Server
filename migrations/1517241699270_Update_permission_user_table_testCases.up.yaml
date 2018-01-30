@@ -1,0 +1,15 @@
+- args:
+    role: user
+    table: testCases
+  type: drop_select_permission
+- args:
+    permission:
+      columns:
+      - input
+      - id
+      - problem_id
+      - output
+      filter: {}
+    role: user
+    table: testCases
+  type: create_select_permission

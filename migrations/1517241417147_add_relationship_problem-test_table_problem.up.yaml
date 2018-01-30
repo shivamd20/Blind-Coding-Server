@@ -1,0 +1,8 @@
+- args:
+    name: problem-test
+    table: problem
+    using:
+      foreign_key_constraint_on:
+        column: problem_id
+        table: testCases
+  type: create_array_relationship

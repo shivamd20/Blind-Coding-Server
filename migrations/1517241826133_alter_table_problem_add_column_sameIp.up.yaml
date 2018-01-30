@@ -1,0 +1,3 @@
+- args:
+    sql: ALTER TABLE "problem" ADD COLUMN "sameIp" text NUll
+  type: run_sql
