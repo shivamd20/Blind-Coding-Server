@@ -1,0 +1,4 @@
+- args:
+    relationship: user-game
+    table: game
+  type: drop_relationship

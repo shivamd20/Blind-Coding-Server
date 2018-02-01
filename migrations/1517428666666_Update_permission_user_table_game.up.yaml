@@ -1,0 +1,17 @@
+- args:
+    role: user
+    table: game
+  type: drop_select_permission
+- args:
+    permission:
+      columns:
+      - duration
+      - game_key
+      - gameid
+      - result
+      - start_time
+      - userId
+      filter: {}
+    role: user
+    table: game
+  type: create_select_permission

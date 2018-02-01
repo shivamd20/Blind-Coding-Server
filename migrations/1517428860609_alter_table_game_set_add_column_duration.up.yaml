@@ -1,0 +1,3 @@
+- args:
+    sql: ALTER TABLE "game_set" ADD COLUMN "duration" integer NOT NULL DEFAULT 30
+  type: run_sql

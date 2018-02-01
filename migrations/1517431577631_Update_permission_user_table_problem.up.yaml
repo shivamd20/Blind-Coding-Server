@@ -1,0 +1,15 @@
+- args:
+    role: user
+    table: problem
+  type: drop_select_permission
+- args:
+    permission:
+      columns:
+      - problem_id
+      - description
+      - sameIp
+      - sampleop
+      filter: {}
+    role: user
+    table: problem
+  type: create_select_permission

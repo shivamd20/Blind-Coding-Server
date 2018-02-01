@@ -1,0 +1,4 @@
+- args:
+    sql: ALTER TABLE "game_set" ADD COLUMN "about" text NOT NULL DEFAULT 'This is
+      just for testing'
+  type: run_sql

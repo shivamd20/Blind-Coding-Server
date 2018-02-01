@@ -1,0 +1,4 @@
+- args:
+    sql: ALTER TABLE "game_set" ADD FOREIGN KEY ("problem_id") REFERENCES "problem"
+      ("problem_id")
+  type: run_sql

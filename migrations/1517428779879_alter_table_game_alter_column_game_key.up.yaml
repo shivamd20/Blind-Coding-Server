@@ -1,0 +1,9 @@
+- args:
+    sql: ALTER TABLE "game" ALTER COLUMN "game_key" TYPE text;
+  type: run_sql
+- args:
+    sql: ALTER TABLE ONLY "game" ALTER COLUMN "game_key" SET DEFAULT 'test';
+  type: run_sql
+- args:
+    sql: ALTER TABLE "game" ALTER COLUMN "game_key" SET NOT NULL;
+  type: run_sql
