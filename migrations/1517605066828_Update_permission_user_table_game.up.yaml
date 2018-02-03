@@ -1,0 +1,14 @@
+- args:
+    permission:
+      columns:
+      - start_time
+      - game_key
+      - result
+      - gameid
+      - userId
+      filter:
+        userId:
+          $eq: X-HASURA-USER-ID
+    role: user
+    table: game
+  type: create_select_permission

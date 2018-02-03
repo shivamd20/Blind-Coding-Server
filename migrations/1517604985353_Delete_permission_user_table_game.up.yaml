@@ -1,0 +1,4 @@
+- args:
+    role: user
+    table: game
+  type: drop_insert_permission
