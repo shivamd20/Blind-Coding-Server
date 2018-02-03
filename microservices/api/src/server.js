@@ -6,6 +6,9 @@ var HandleSocket=require('rt-hasura');
 var app = express();
 
 
+var isFunction = function (obj) {
+    return !!(obj && obj.constructor && obj.call && obj.apply);
+};
 
 var path = require('path');
 
@@ -29,7 +32,19 @@ app.get('/', function (req, res) {
 app.use(express.static('client'))
 
 
-onConnection = (socket) => {};
+onConnection = (socket) => {
+
+    socket.on('submitgame', (e,fn)=>{
+
+        isFunction(fn)
+        {
+            fn(e)
+        }
+
+        
+    });
+
+};
 
 var handleSocket=new HandleSocket(server,undefined,onConnection);
 
