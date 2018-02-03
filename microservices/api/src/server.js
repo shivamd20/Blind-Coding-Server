@@ -1,4 +1,4 @@
-import { POINT_CONVERSION_HYBRID } from 'constants';
+
 
 
 require('./env')();
@@ -11,7 +11,7 @@ var app = express();
 
 var path = require('path');
 
-var socket = require('socket.io')()
+//var socket = require('socket.io')()
 
 var server = require('http').Server(app);
 
@@ -33,7 +33,7 @@ app.get('/', function (req, res) {
 app.use(express.static('client'))
 
 
-onConnection = (sockevt) => {
+var onConnection = (socket) => {
 
     socket.on('submitgame',(game_id , fn )=>{
 
