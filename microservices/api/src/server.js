@@ -51,7 +51,7 @@ var onConnection = (socket) => {
 
 var handleSocket=new HandleSocket(server,undefined);
 
-handleSocket.onCn = onConnection;
+//handleSocket.onCn = onConnection;
 
 
 
