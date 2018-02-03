@@ -1,3 +1,5 @@
+import { POINT_CONVERSION_HYBRID } from 'constants';
+
 
 require('./env')();
 
@@ -8,6 +10,8 @@ var app = express();
 
 
 var path = require('path');
+
+var socket = require('socket.io')()
 
 var server = require('http').Server(app);
 
@@ -29,7 +33,15 @@ app.get('/', function (req, res) {
 app.use(express.static('client'))
 
 
-onConnection = (socket) => {};
+onConnection = (sockevt) => {
+
+    socket.on('submitgame',(game_id , fn )=>{
+
+        handleSocket.queryData()
+
+    })
+
+};
 
 var handleSocket=new HandleSocket(server,undefined,onConnection);
 
@@ -39,4 +51,5 @@ server.listen(8080, function () {
     console.log('Example app listening on port 8080!');
   });
 
-  //console.log(process.env);
+
+  
