@@ -1,17 +1,10 @@
 
-
-
 require('./env')();
 
 var express = require('express');
 var HandleSocket=require('rt-hasura');
 var app = express();
 
-
-var isFunction = function (obj) {
-    return !!(obj && obj.constructor && obj.call && obj.apply);
-    
-};
 
 
 var path = require('path');
@@ -36,22 +29,11 @@ app.get('/', function (req, res) {
 app.use(express.static('client'))
 
 
-var onConnection = (socket) => {
+var onConnection = (socket) => {};
 
-    socket.on('gamesubmit',(fn)=>{
+var handleSocket=new HandleSocket(server,undefined,onConnection);
 
-            if(isFunction(fn)){
-                fn('ramu');
-            }
-
-    });
-
-
-};
-
-var handleSocket=new HandleSocket(server,undefined, ()=>{});
-
-//handleSocket.onCn = onConnection;
+handleSocket.onCn = onConnection;
 
 
 
