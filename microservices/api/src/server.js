@@ -49,7 +49,7 @@ var onConnection = (socket) => {
 
 };
 
-var handleSocket=new HandleSocket(server,undefined);
+var handleSocket=new HandleSocket(server,undefined, ()=>{});
 
 //handleSocket.onCn = onConnection;
 
