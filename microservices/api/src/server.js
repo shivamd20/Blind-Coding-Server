@@ -36,12 +36,12 @@ app.use(express.static('client'))
 
 onConnection = (socket) => {
 
-    socket.on('submitgame',(d,fn)=>{
+    // socket.on('submitgame',(d,fn)=>{
 
 
-        if(isFunction())
-        fn(d);
-    });
+    //     if(isFunction())
+    //     fn(d);
+    // });
 
 };
 
