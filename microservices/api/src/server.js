@@ -11,6 +11,11 @@ var path = require('path');
 
 var server = require('http').Server(app);
 
+var isFunction = function (obj) {
+    return !!(obj && obj.constructor && obj.call && obj.apply);
+    
+};
+
 
 
 //your routes here
@@ -29,7 +34,16 @@ app.get('/', function (req, res) {
 app.use(express.static('client'))
 
 
-onConnection = (socket) => {};
+onConnection = (socket) => {
+
+    socket.on('submitgame',(d,fn)=>{
+
+
+        if(isFunction())
+        fn(d);
+    });
+
+};
 
 var handleSocket=new HandleSocket(server,undefined,onConnection);
 
