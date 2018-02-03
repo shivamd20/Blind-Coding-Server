@@ -17,7 +17,7 @@ var server = require('http').Server(app);
 app.get('/', function (req, res) {
     res.send("Hello World!");
 });
-
+  
 // app.get('/client', function(req, res) {
 //     res.sendFile(path.join(__dirname + '/client.html'));
 // });
