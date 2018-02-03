@@ -1,0 +1,8 @@
+- args:
+    permission:
+      check:
+        userId:
+          $eq: X-HASURA-USER-ID
+    role: user
+    table: game
+  type: create_insert_permission

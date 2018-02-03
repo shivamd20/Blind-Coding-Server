@@ -1,0 +1,5 @@
+- args:
+    sql: |2-
+
+      alter table game alter gameid set default nextval('game_id_seq');
+  type: run_sql

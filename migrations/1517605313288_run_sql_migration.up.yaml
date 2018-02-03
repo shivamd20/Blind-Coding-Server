@@ -1,0 +1,3 @@
+- args:
+    sql: create sequence game_id_seq;
+  type: run_sql
