@@ -29,11 +29,9 @@ app.get('/', function (req, res) {
 app.use(express.static('client'))
 
 
-var onConnection = (socket) => {};
+onConnection = (socket) => {};
 
 var handleSocket=new HandleSocket(server,undefined,onConnection);
-
-handleSocket.onCn = onConnection;
 
 
 
