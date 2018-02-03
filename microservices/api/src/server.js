@@ -1,6 +1,4 @@
 
-
-
 require('./env')();
 
 var express = require('express');
@@ -11,8 +9,6 @@ var app = express();
 
 var path = require('path');
 
-//var socket = require('socket.io')()
-
 var server = require('http').Server(app);
 
 
@@ -21,7 +17,7 @@ var server = require('http').Server(app);
 app.get('/', function (req, res) {
     res.send("Hello World!");
 });
-  
+
 // app.get('/client', function(req, res) {
 //     res.sendFile(path.join(__dirname + '/client.html'));
 // });
@@ -33,15 +29,7 @@ app.get('/', function (req, res) {
 app.use(express.static('client'))
 
 
-var onConnection = (socket) => {
-
-    socket.on('submitgame',(game_id , fn )=>{
-
-        handleSocket.queryData()
-
-    })
-
-};
+onConnection = (socket) => {};
 
 var handleSocket=new HandleSocket(server,undefined,onConnection);
 
@@ -51,5 +39,4 @@ server.listen(8080, function () {
     console.log('Example app listening on port 8080!');
   });
 
-
-  
+  //console.log(process.env);
