@@ -8,6 +8,7 @@ var app = express();
 var axios = require('axios');
 
 const glotToken = 'c5746811-352e-439e-82c8-4ca9dadb0eea';
+const adminToken = 'Bearer a230f5d76d215c70433405cf969a0372475c5f53c6edd107';
 
 async function query(options) {
 
@@ -129,7 +130,7 @@ onConnection = (socket) => {
                         }
                     }
                 }
-            }, socket.token);
+            },adminToken);
 
 
             // console.log(response)
@@ -177,7 +178,7 @@ onConnection = (socket) => {
                         "result"
                     ]
                 }
-            }, socket.token);
+            }, adminToken);
 
 
             console.log("n = ",n.toString());
