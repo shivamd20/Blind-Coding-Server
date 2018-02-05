@@ -8,7 +8,7 @@ var app = express();
 var axios = require('axios');
 
 const glotToken = 'c5746811-352e-439e-82c8-4ca9dadb0eea';
-const adminToken = 'Bearer a230f5d76d215c70433405cf969a0372475c5f53c6edd107';
+const adminToken = 'Bearer 7a1bd26c7c781750e8cff731d71f35485762a66ff86c97cc';
 
 async function query(options) {
 
