@@ -1,0 +1,3 @@
+- args:
+    sql: alter table game alter column result type numeric(10,0) using result::numeric;
+  type: run_sql

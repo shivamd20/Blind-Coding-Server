@@ -1,0 +1,17 @@
+- args:
+    role: anonymous
+    table: leads
+  type: drop_select_permission
+- args:
+    permission:
+      columns:
+      - name
+      - semester
+      - user_id
+      - score
+      - College
+      - branch
+      filter: {}
+    role: anonymous
+    table: leads
+  type: create_select_permission

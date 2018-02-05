@@ -1,0 +1,5 @@
+- args:
+    sql: 'create view leads as select u.user_id,u.name,u."College",u.semester,u.branch,
+      sum(g.result) as score from game g inner join public.user u on g."userId"=u.user_id
+      group by u.user_id order by score DESC, random() '
+  type: run_sql

@@ -1,0 +1,13 @@
+- args:
+    permission:
+      columns:
+      - user_id
+      - name
+      - College
+      - semester
+      - branch
+      - score
+      filter: {}
+    role: user
+    table: leads
+  type: create_select_permission

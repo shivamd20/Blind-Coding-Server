@@ -1,0 +1,12 @@
+- args:
+    permission:
+      columns:
+      - code
+      - filename
+      - language
+      filter:
+        userId:
+          $eq: X-HASURA-USER-ID
+    role: user
+    table: game
+  type: create_update_permission
