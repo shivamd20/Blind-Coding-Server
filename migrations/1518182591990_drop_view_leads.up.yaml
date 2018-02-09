@@ -1,0 +1,3 @@
+- args:
+    sql: DROP VIEW "leads"
+  type: run_sql

@@ -1,0 +1,28 @@
+- args:
+    sql: ALTER TABLE "game_set" ALTER COLUMN "about" TYPE text;
+  type: run_sql
+- args:
+    sql: 'ALTER TABLE ONLY "game_set" ALTER COLUMN "about" SET DEFAULT ''BLIND CODING
+      Registration Every participant have to register themself here. After submission
+      they have to pay 30/- to the event coordinators.  Online coding  The online
+      coding will start on 11th feb and will end on 15th feb. Every participant will
+      get a secret key by mail for each day. They have to enter that secret key here
+      to give this test.  Final Round In the final round all participant have to come
+      to the venue to give the test.  The venue will be SSEC CSE Lab and the date
+      will be 16.02.2018.  Prizes : Top two contestants of the final round will get
+      prizes worth 1000 and 800 respectively.  The online round winner will get prizes
+      worth 500.       For the programming question, you can choose any language from
+      the given list and attempt. All inputs for the programming problem are from
+      STDIN and output to STDOUT. Programming questions have a Compile and Run option
+      where you can run your solution against sample test cases, before submitting.
+      You can submit solution for a programming problem as many times as you want.
+      The judging criteria will be the complexity of your code. You should have to
+      be in the full screen mode, otherwise you will be eliminated. After 4 prompts
+      the test will automatically end. Read the problem statement carefully. Don’t
+      add explicit newline characters to your output unless asked. Submit your code
+      after you are done with the coding. Unsubmitted code will not be considered
+      for the evaluation.'';'
+  type: run_sql
+- args:
+    sql: ALTER TABLE "game_set" ALTER COLUMN "about" SET NOT NULL;
+  type: run_sql

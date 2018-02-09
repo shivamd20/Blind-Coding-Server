@@ -1,0 +1,12 @@
+- args:
+    role: user
+    table: leads
+  type: drop_select_permission
+- args:
+    permission:
+      columns:
+      - name
+      filter: {}
+    role: user
+    table: leads
+  type: create_select_permission
