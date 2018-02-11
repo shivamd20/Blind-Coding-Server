@@ -1,0 +1,21 @@
+- args:
+    sql: ALTER TABLE "game_set" ALTER COLUMN "about" TYPE text;
+  type: run_sql
+- args:
+    sql: ALTER TABLE ONLY "game_set" ALTER COLUMN "about" SET DEFAULT 'For the programming
+      question, you can choose any language from the given list and attempt. All inputs
+      for the programming problem are from STDIN and output to STDOUT. Programming
+      questions have a Compile and Run option where you can run your solution against
+      sample test cases, before submitting. You can submit solution for a programming
+      problem as many times as you want. The judging criteria will be the complexity
+      of your code. You should have to be in the full screen mode, otherwise you will
+      be eliminated. After 4 prompts the test will automatically end. Read the problem
+      statement carefully. Don’t add explicit newline characters to your output unless
+      asked. Submit your code after you are done with the coding. Unsubmitted code
+      will not be considered for the evaluation. Tab key will not work. Please use
+      spaces for indentation. You can submit your code as many times as you want.
+      Final submission will be used for evaluation';
+  type: run_sql
+- args:
+    sql: ALTER TABLE "game_set" ALTER COLUMN "about" SET NOT NULL;
+  type: run_sql
