@@ -25,5 +25,5 @@
     "deploy": "gh-pages -d build",
     "analyze": "source-map-explorer build/static/js/main.*"
   },
-  "homepage": "https://shivamd20.github.io/blicode"
+  "homepage": "https://code.dakshya.tech"
 }
