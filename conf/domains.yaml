@@ -10,12 +10,11 @@
 # Point your own domain to the IP of the cluster and add the domain here
 # Example configuration for domain with free SSL certs from LetsEncypt
 #
- dakshya.tech:
-   ssl:
-     type: LetsEncrypt
-     conf: 
-        account: shivamd20@gmail.com
-
+dakshya.tech:
+  ssl:
+    conf:
+      account: you@youremail.com
+    type: LetsEncrypt
 # Example configurtaion for a domain without SSL
 #
 # example-domain.com:
