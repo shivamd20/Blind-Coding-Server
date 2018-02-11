@@ -1,10 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
+import 'typeface-roboto';
+import NewApp from './NewApp';
 
-import HasuraExampleApp from './hasuraExamples/HasuraExampleApp';
+import {
+    BrowserRouter as Router,
+    Route,
+    Link
+  } from 'react-router-dom'
 
-//Replace HasuraExampleApp with your own component
-ReactDOM.render(
-  <HasuraExampleApp />,
-  document.getElementById('root')
-);
+ReactDOM.render(<NewApp />, document.getElementById('root'));
+registerServiceWorker();

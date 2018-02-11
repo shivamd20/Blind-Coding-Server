@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -19,13 +19,53 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Blind-Coding | Samvid</title>
+
+    <script>
+    
+    window.oncontextmenu= e => {
+      e.preventDefault();
+    }
+
+
+    </script>
+
+    <style>
+    
+    #root{
+      top:50vh
+    }
+
+    body{
+      background-color: darkslategray;
+      min-height: 100%;
+    }
+
+    .preventcopy {
+ -webkit-touch-callout: none; 
+ -webkit-user-select: none; 
+ -khtml-user-select: none; 
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+}
+
+    </style>
   </head>
-  <body>
+  <body   oncopy="return false"
+  class="preventcopy" 
+  oncut="return false"
+  onpaste="return false">
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
-    <div id="root"></div>
+    <div  id="root" style="height: 100%; background-color: c">
+    <center>
+
+      Loading...
+
+    </center>
+  </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
